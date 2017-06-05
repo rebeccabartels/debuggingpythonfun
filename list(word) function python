@@ -1,0 +1,10 @@
+sprite = codesters.Sprite("puppy", 0, -75)
+word = "puppies"
+
+secret_letters = list(word) #Create a list with seven values: the letters in puppies 
+revealed_letters = ""
+
+for letter in secret_letters: #will run 7 times 
+    revealed_letters += letter  #does not equal to 
+    sprite.say(revealed_letters) 
+    stage.wait(1)
